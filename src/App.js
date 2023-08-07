@@ -41,7 +41,7 @@ const App = () => {
           <div className="top">
             <div className="location">{weatherdata.name}</div>
             <div className="temp">
-              {weatherdata.main ? <h1>{weatherdata.main.temp}°F</h1> : null}
+              {weatherdata.main ? <h1>{weatherdata.main.temp}°K</h1> : null}
             </div>
             <div className="description">
               {weatherdata.weather ? (
@@ -51,7 +51,7 @@ const App = () => {
           </div>
           <div className="bottom">
             <div className="feels">
-              {weatherdata.main ? <p>{weatherdata.main.feels_like}°F</p> : null}
+              {weatherdata.main ? <p>{weatherdata.main.feels_like}°K</p> : null}
               <p>Feels Like</p>
             </div>
             <div className="humidity">
